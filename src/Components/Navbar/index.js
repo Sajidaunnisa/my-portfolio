@@ -7,7 +7,7 @@ const Navbar = () => {
       <nav className="navbar navbar-dark bg-dark fixed-top">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Offcanvas dark navbar
+            myPortfolio
           </a>
           <button
             className="navbar-toggler"
@@ -27,7 +27,7 @@ const Navbar = () => {
           >
             <div className="offcanvas-header">
               <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                Dark offcanvas
+                Sections
               </h5>
               <button
                 type="button"
@@ -45,52 +45,25 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">
-                    Link
+                    About me
                   </a>
                 </li>
-                <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Dropdown
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Skills
                   </a>
-                  <ul className="dropdown-menu dropdown-menu-dark">
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Action
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
-                    </li>
-                    <li>
-                      <hr className="dropdown-divider"></hr>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
-                    </li>
-                  </ul>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Projects
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Contact me
+                  </a>
                 </li>
               </ul>
-              <form className="d-flex mt-3" role="search">
-                <input
-                  className="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                ></input>
-                <button className="btn btn-success" type="submit">
-                  Search
-                </button>
-              </form>
             </div>
           </div>
         </div>
