@@ -1,0 +1,19 @@
+.navbar {
+  background-color: black;
+}
+.side-bar {
+  width: 300px !important;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: 600;
+}
+.offcanvas-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
