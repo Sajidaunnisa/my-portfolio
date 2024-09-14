@@ -3,8 +3,8 @@ import image from "./image1.png";
 
 const About = () => {
   return (
-    <div id="about" className="m-5">
-      <div className="card bg-dark container-lg p-5 col-12">
+    <div id="about">
+      <div className="card bg-dark container-lg p-5 col-12 mt-5">
         <h3 className="text-center text-danger fw-bold my-5">About me</h3>
         <div className="row g-0">
           <div className="col-md-4 col-sm-8 col-xl-2 img-container">

@@ -72,9 +72,9 @@ const Contact = () => {
           </div>
         </form>
 
-        <div className=" ps-5 m-5">
+        <div className=" ps-5">
           <h4 className="text-danger mb-5">Contact me at :</h4>
-          <div className="d-flex ms-5 ">
+          <div className="d-flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -87,7 +87,7 @@ const Contact = () => {
             </svg>
             <h5 className="text-light ms-3">sajidaunnisa78@gmail.com</h5>
           </div>
-          <div className="d-flex ms-5 mt-3">
+          <div className="d-flex mt-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -103,7 +103,7 @@ const Contact = () => {
             </svg>
             <h5 className="text-light ms-3">+91 6300786270</h5>
           </div>
-          <div className="d-flex ms-5 mt-3">
+          <div className="d-flex mt-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
