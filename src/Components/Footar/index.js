@@ -10,8 +10,10 @@ const Footar = () => {
               <a href="https://github.com/Sajidaunnisa" alt="github">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="1.5rem"
+                  height="auto"
+                  max-width="40px"
+                  min-width="20px"
                   fill="currentColor"
                   class="bi bi-github text-light me-4"
                   viewBox="0 0 16 16"
@@ -22,8 +24,10 @@ const Footar = () => {
               <a href="/" alt="instagram">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="1.5rem"
+                  height="auto"
+                  max-width="40px"
+                  min-width="20px"
                   fill="currentColor"
                   class="bi bi-instagram text-light me-4"
                   viewBox="0 0 16 16"
@@ -34,8 +38,10 @@ const Footar = () => {
               <a href="/" alt="linkedin">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="1.5rem"
+                  height="auto"
+                  max-width="40px"
+                  min-width="20px"
                   fill="currentColor"
                   class="bi bi-linkedin text-light me-4"
                   viewBox="0 0 16 16"
@@ -46,8 +52,10 @@ const Footar = () => {
               <a href="/" alt="twitter-x">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="1.5rem"
+                  height="auto"
+                  max-width="40px"
+                  min-width="20px"
                   fill="currentColor"
                   class="bi bi-twitter-x text-light me-4"
                   viewBox="0 0 16 16"
@@ -58,8 +66,10 @@ const Footar = () => {
               <a href="/" alt="facebook">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="1.5rem"
+                  height="auto"
+                  max-width="40px"
+                  min-width="20px"
                   fill="currentColor"
                   class="bi bi-facebook text-light"
                   viewBox="0 0 16 16"

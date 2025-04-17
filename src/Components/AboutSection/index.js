@@ -1,42 +1,42 @@
 import React from "react";
-import image from "./image1.png";
+import image from "./images/image1.png";
 
 const About = () => {
   return (
-    <div id="about">
-      <div className="card bg-dark container-lg p-5 col-12 mt-5">
-        <h3 className="text-center text-danger fw-bold my-5">About me</h3>
-        <div className="row g-0">
-          <div className="col-md-4 col-sm-8 col-xl-2 img-container">
+    <div id="about" className="container my-5">
+      <div className="card bg-dark p-4">
+        <h3 className="text-center text-danger fw-bold mb-4">About me</h3>
+        <div className="row align-items-center g-4">
+          {/* Profile Image */}
+          <div className="col-12 col-md-4 text-center">
             <img
               src={image}
-              className="img-fluid rounded-circle bg-danger first-img"
-              alt="image"
-            ></img>
+              className="img-fluid rounded-circle bg-danger p-1"
+              alt="Sajida Unnisa"
+              style={{ width: "200px", height: "200px", objectFit: "cover" }}
+            />
           </div>
-          <div className="col-7 ml-4">
-            <div className="card-body">
-              <p>
-                <h5 className="card-title text-danger">Sajida Unnisa</h5>
-              </p>
-              <p className="card-text text-light">
-                As a final-year student and experienced frontend developer, I
-                bring a unique blend of skills and creativity to every project.
-                With expertise in HTML, CSS, JavaScript, React.js, and Next.js,
-                I've honed my abilities through diverse projects like Spotify
-                and Zomato clones and Weather App. I'm passionate about
-                delivering high-quality, user-centric designs and continually
-                learning to create engaging and responsive interfaces.
-              </p>
+
+          {/* Text Content */}
+          <div className="col-12 col-md-8">
+            <div className="card-body text-light">
               <p className="card-text">
-                <a
-                  href="#contact"
-                  type="button"
-                  className="btn btn-sm btn-outline-danger"
-                >
-                  Contact me
-                </a>
+                Hi, I’m <strong className="text-danger">Sajida Unnisa</strong> —
+                a dedicated full stack developer and final-year Computer Science
+                Engineering student, graduating in August 2025. I build
+                responsive, user-friendly web applications using technologies
+                like{" "}
+                <strong>React.js, Redux, Bootstrap, Node.js, Express,</strong>{" "}
+                and <strong>MongoDB</strong>. From developing clones of Zomato,
+                Myntra, and Printify to designing clean UIs and implementing
+                full-stack functionality, I love bringing ideas to life through
+                code. I’m constantly learning new technologies to level up my
+                skills. Beyond code, I enjoy reading, making crafts, and staying
+                connected to my faith and family.
               </p>
+              <a href="#contact" className="btn btn-outline-danger btn-sm mt-2">
+                Contact me
+              </a>
             </div>
           </div>
         </div>

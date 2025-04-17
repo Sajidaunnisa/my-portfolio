@@ -1,19 +1,24 @@
-.navbar {
-  background-color: black;
-}
-.side-bar {
-  width: 300px !important;
+.nav-link {
+  position: relative;
+  color: #6c757d; /* Bootstrap's secondary color */
+  transition: color 0.3s ease;
 }
 
-.nav-link {
-  font-size: 18px;
-  font-weight: 600;
+.nav-link:hover {
+  color: #fff !important; /* Optional: highlight text on hover */
 }
-.offcanvas-title {
-  font-size: 20px;
-  font-weight: 500;
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: red;
+  transition: width 0.3s ease;
 }
-.active {
-  text-decoration: underline;
-  font-weight: bold;
+
+.nav-link:hover::after {
+  width: 100%;
 }

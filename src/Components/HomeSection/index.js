@@ -7,17 +7,19 @@ const Home = () => {
     <div className="container" id="home">
       <div className="tag-line">
         <h4 className="text-light">Hello! I'm</h4>
-        <ReactTyped
-          className="typed-text text-danger"
-          strings={[
-            "Frontend Developer",
-            "Web Developer",
-            "Software Developer",
-          ]}
-          typeSpeed={40}
-          backSpeed={50}
-          loop
-        />
+        <div className="typed-container">
+          <ReactTyped
+            className="typed-text text-danger fs-1 fs-md-2 fs-sm-3 fw-medium"
+            strings={[
+              "Frontend Developer",
+              "Web Developer",
+              "Software Developer",
+            ]}
+            typeSpeed={40}
+            backSpeed={50}
+            loop
+          />
+        </div>
         <h2 className="text-light mt-2">Sajida Unnisa</h2>
         <a
           href="#projects"

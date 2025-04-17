@@ -14,13 +14,14 @@ const Projects = () => {
         <div className="title text-danger text-center">
           <h3 className="fw-bold mt-5">Projects</h3>
         </div>
-        <div class="row row-cols-md-3 g-5 m-3">
-          <div class="col">
-            <div class="card border-danger  p-2">
-              <img src={image1} class="card-img-top" alt="zomato clone"></img>
-              <div class="card-body">
-                <h5 class="card-title text-danger">Zomato Clone</h5>
-                <p class="card-text text-light">
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-5 m-3">
+          {/* Zomato Clone */}
+          <div className="col">
+            <div className="card border-danger p-2 project-card">
+              <img src={image1} className="card-img-top" alt="zomato clone" />
+              <div className="card-body">
+                <h5 className="card-title text-danger">Zomato Clone</h5>
+                <p className="card-text text-light">
                   Developed a Zomato clone with HTML, CSS, JavaScript, and
                   React.js, demonstrating my skills in building complex web
                   applications with modern libraries and frameworks.
@@ -37,12 +38,14 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card border-danger  p-2">
-              <img src={image2} class="card-img-top" alt="weather app"></img>
-              <div class="card-body">
-                <h5 class="card-title text-danger">Weather App</h5>
-                <p class="card-text text-light">
+
+          {/* Weather App */}
+          <div className="col">
+            <div className="card border-danger p-2 project-card">
+              <img src={image2} className="card-img-top" alt="weather app" />
+              <div className="card-body">
+                <h5 className="card-title text-danger">Weather App</h5>
+                <p className="card-text text-light">
                   Developed a Weather App with HTML, CSS, and JavaScript,
                   demonstrating my skills in creating interactive web
                   applications that display real-time data.
@@ -59,12 +62,14 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card border-danger p-2">
-              <img src={image3} class="card-img-top" alt="spotify clone"></img>
-              <div class="card-body">
-                <h5 class="card-title text-danger">Spotify Clone</h5>
-                <p class="card-text text-light">
+
+          {/* Spotify Clone */}
+          <div className="col">
+            <div className="card border-danger p-2 project-card">
+              <img src={image3} className="card-img-top" alt="spotify clone" />
+              <div className="card-body">
+                <h5 className="card-title text-danger">Spotify Clone</h5>
+                <p className="card-text text-light">
                   Built a Spotify clone with HTML and CSS, demonstrating my
                   ability to replicate complex UI designs and layouts with
                   precision and attention to detail.
@@ -81,16 +86,18 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card border-danger p-2">
+
+          {/* Rock Paper Scissors */}
+          <div className="col">
+            <div className="card border-danger p-2 project-card">
               <img
                 src={image5}
-                class="card-img-top"
+                className="card-img-top"
                 alt="Rock Paper Scissor"
-              ></img>
-              <div class="card-body">
-                <h5 class="card-title text-danger">Rock Paper Scissor</h5>
-                <p class="card-text text-light">
+              />
+              <div className="card-body">
+                <h5 className="card-title text-danger">Rock Paper Scissor</h5>
+                <p className="card-text text-light">
                   Created a Stone Paper Scissor game with HTML, CSS, and
                   JavaScript, demonstrating my skills in building interactive
                   and user-friendly web applications.
@@ -107,12 +114,14 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card border-danger p-2">
-              <img src={image4} class="card-img-top" alt="mastercard"></img>
-              <div class="card-body">
-                <h5 class="card-title text-danger">Mastercard</h5>
-                <p class="card-text text-light">
+
+          {/* Mastercard */}
+          <div className="col">
+            <div className="card border-danger p-2 project-card">
+              <img src={image4} className="card-img-top" alt="mastercard" />
+              <div className="card-body">
+                <h5 className="card-title text-danger">Mastercard</h5>
+                <p className="card-text text-light">
                   Created a Mastercard mockup using HTML and CSS, showcasing my
                   ability to replicate real-world designs with precision and
                   attention to detail.
@@ -129,12 +138,14 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card border-danger p-2">
-              <img src={image6} class="card-img-top" alt="Tic Tac Toe"></img>
-              <div class="card-body">
-                <h5 class="card-title text-danger">Tic Tac Toe</h5>
-                <p class="card-text text-light">
+
+          {/* Tic Tac Toe */}
+          <div className="col">
+            <div className="card border-danger p-2 project-card">
+              <img src={image6} className="card-img-top" alt="Tic Tac Toe" />
+              <div className="card-body">
+                <h5 className="card-title text-danger">Tic Tac Toe</h5>
+                <p className="card-text text-light">
                   Built a Tic Tac Toe game with HTML, CSS, and JavaScript,
                   demonstrating my skills in creating interactive and engaging
                   web applications for users to enjoy.

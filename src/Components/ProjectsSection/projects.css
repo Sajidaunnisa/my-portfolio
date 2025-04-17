@@ -1,3 +1,18 @@
 .card {
   background-color: black !important;
 }
+
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 5px 5px rgba(238, 127, 127, 0.2);
+}
+
+@media (max-width: 576px) {
+  .project-card {
+    margin-bottom: 20px;
+  }
+}

@@ -14,7 +14,9 @@
   align-items: center;
   text-align: center;
 }
-.typed-text {
-  font-size: 40px;
-  font-weight: 500;
+.typed-container {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }

@@ -1,117 +1,73 @@
 import React, { useState } from "react";
-import "./navBar.css";
 import logo from "./logo.png";
+import "./navbar.css";
 
 const Navbar = () => {
-  // State to track the active section
   const [activeSection, setActiveSection] = useState("home");
 
-  // Function to handle link click and update active section
   const handleNavClick = (section) => {
     setActiveSection(section);
   };
 
+  const navLinks = [
+    { id: "home", label: "Home" },
+    { id: "about", label: "About me" },
+    { id: "skills", label: "Skills" },
+    { id: "projects", label: "Projects" },
+    { id: "contact", label: "Contact me" },
+  ];
+
   return (
-    <div>
-      <nav className="navbar navbar-dark fixed-top">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            <img src={logo} alt="logo" width="220" height="55" />
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasDarkNavbar"
-            aria-controls="offcanvasDarkNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div
-            className="offcanvas offcanvas-end bg-dark side-bar"
-            tabIndex="-1"
-            id="offcanvasDarkNavbar"
-            aria-labelledby="offcanvasDarkNavbarLabel"
-          >
-            <div className="offcanvas-header bg-dark ms-4 mt-4">
-              <h5
-                className="offcanvas-title text-danger"
-                id="offcanvasDarkNavbarLabel"
-              >
-                PORTFOLIO
-              </h5>
-              <button
-                type="button"
-                className="btn-close btn-close-white"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div className="offcanvas-body">
-              <ul className="navbar-nav flex-grow-1 ms-4">
-                <li className="nav-item mb-3">
-                  <a
-                    className={`nav-link ${
-                      activeSection === "home" ? "active" : ""
+    <nav className="navbar navbar-expand-lg bg-black navbar-dark fixed-top">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="#home">
+          <img
+            src={logo}
+            alt="logo"
+            style={{ height: "55px", width: "auto" }}
+            className="img-fluid"
+          />
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          className="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul className="navbar-nav">
+            {navLinks.map((link) => (
+              <li className="nav-item mx-2" key={link.id}>
+                <a
+                  href={`#${link.id}`}
+                  onClick={() => handleNavClick(link.id)}
+                  className={`nav-link fw-semibold text-secondary position-relative ${
+                    activeSection === link.id ? "text-white" : ""
+                  }`}
+                >
+                  {link.label}
+                  <span
+                    className={`position-absolute start-0 bottom-0 border-2 border-danger w-100 ${
+                      activeSection === link.id ? "border-bottom" : ""
                     }`}
-                    aria-current="page"
-                    href="#home"
-                    onClick={() => handleNavClick("home")}
-                  >
-                    Home
-                  </a>
-                </li>
-                <li className="nav-item mb-3">
-                  <a
-                    className={`nav-link ${
-                      activeSection === "about" ? "active" : ""
-                    }`}
-                    href="#about"
-                    onClick={() => handleNavClick("about")}
-                  >
-                    About me
-                  </a>
-                </li>
-                <li className="nav-item mb-3 ">
-                  <a
-                    className={`nav-link ${
-                      activeSection === "skills" ? "active" : ""
-                    }`}
-                    href="#skills"
-                    onClick={() => handleNavClick("skills")}
-                  >
-                    Skills
-                  </a>
-                </li>
-                <li className="nav-item mb-3">
-                  <a
-                    className={`nav-link ${
-                      activeSection === "projects" ? "active" : ""
-                    }`}
-                    href="#projects"
-                    onClick={() => handleNavClick("projects")}
-                  >
-                    Projects
-                  </a>
-                </li>
-                <li className="nav-item mb-3">
-                  <a
-                    className={`nav-link ${
-                      activeSection === "contact" ? "active" : ""
-                    }`}
-                    href="#contact"
-                    onClick={() => handleNavClick("contact")}
-                  >
-                    Contact me
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+                    style={{ transition: "all 0.3s ease" }}
+                  ></span>
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 };
 
