@@ -4,8 +4,10 @@ import image1 from "./Images/zomato.png";
 import image2 from "./Images/weather-app.png";
 import image3 from "./Images/spotify.png";
 import image4 from "./Images/mastercard.png";
-import image5 from "./Images/rock-paper-scissors.png";
-import image6 from "./Images/tic-tac-toe.png";
+// import image5 from "./Images/rock-paper-scissors.png";
+// import image6 from "./Images/tic-tac-toe.png";
+import image7 from "./Images/myntra.png";
+import image8 from "./Images/convosync.png";
 
 const Projects = () => {
   return (
@@ -15,6 +17,53 @@ const Projects = () => {
           <h3 className="fw-bold mt-5">Projects</h3>
         </div>
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-5 m-3">
+          {/* myntra-clone */}
+          <div className="col">
+            <div className="card border-danger p-2 project-card">
+              <img src={image7} className="card-img-top" alt="zomato clone" />
+              <div className="card-body">
+                <h5 className="card-title text-danger">Myntra Clone</h5>
+                <p className="card-text text-light">
+                  built using React, Redux, Bootstrap, Node.js, and MySQL.
+                  Includes wishlist, bag and category-wise product listings with
+                  dynamic routing.
+                </p>
+                <p className="card-text">
+                  <a
+                    href="https://ecomweb-by-sajida.netlify.app"
+                    type="button"
+                    className="btn btn-sm btn-outline-danger"
+                  >
+                    Demo
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* ConvoSync-A Real Time Chat Application */}
+          <div className="col">
+            <div className="card border-danger p-2 project-card">
+              <img src={image8} className="card-img-top" alt="zomato clone" />
+              <div className="card-body">
+                <h5 className="card-title text-danger">ConvoSync-A Chat App</h5>
+                <p className="card-text text-light">
+                  built using React, Redux, Socket.IO, Node.js & MongoDB.
+                  Supports authentication, media sharing, and live messaging
+                  with Cloudinary integration.
+                </p>
+                <p className="card-text">
+                  <a
+                    href="https://convosync-chatapp.netlify.app"
+                    type="button"
+                    className="btn btn-sm btn-outline-danger"
+                  >
+                    Demo
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* Zomato Clone */}
           <div className="col">
             <div className="card border-danger p-2 project-card">
@@ -88,7 +137,7 @@ const Projects = () => {
           </div>
 
           {/* Rock Paper Scissors */}
-          <div className="col">
+          {/* <div className="col">
             <div className="card border-danger p-2 project-card">
               <img
                 src={image5}
@@ -113,7 +162,7 @@ const Projects = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Mastercard */}
           <div className="col">
@@ -140,7 +189,7 @@ const Projects = () => {
           </div>
 
           {/* Tic Tac Toe */}
-          <div className="col">
+          {/* <div className="col">
             <div className="card border-danger p-2 project-card">
               <img src={image6} className="card-img-top" alt="Tic Tac Toe" />
               <div className="card-body">
@@ -161,7 +210,7 @@ const Projects = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

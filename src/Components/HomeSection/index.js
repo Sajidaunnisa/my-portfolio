@@ -11,9 +11,9 @@ const Home = () => {
           <ReactTyped
             className="typed-text text-danger fs-1 fs-md-2 fs-sm-3 fw-medium"
             strings={[
-              "Frontend Developer",
+              "Full Stack Developer",
               "Web Developer",
-              "Software Developer",
+              "MERN Stack Developer",
             ]}
             typeSpeed={40}
             backSpeed={50}

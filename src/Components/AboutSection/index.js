@@ -22,17 +22,18 @@ const About = () => {
             <div className="card-body text-light">
               <p className="card-text">
                 Hi, I’m <strong className="text-danger">Sajida Unnisa</strong> —
-                a dedicated full stack developer and final-year Computer Science
-                Engineering student, graduating in August 2025. I build
-                responsive, user-friendly web applications using technologies
-                like{" "}
-                <strong>React.js, Redux, Bootstrap, Node.js, Express,</strong>{" "}
-                and <strong>MongoDB</strong>. From developing clones of Zomato,
-                Myntra, and Printify to designing clean UIs and implementing
-                full-stack functionality, I love bringing ideas to life through
-                code. I’m constantly learning new technologies to level up my
-                skills. Beyond code, I enjoy reading, making crafts, and staying
-                connected to my faith and family.
+                a passionate <strong>MERN stack developer</strong> and B.Tech
+                graduate in Computer Science Engineering (2025). I specialize in
+                building responsive, user-focused web applications using
+                technologies like{" "}
+                <strong>React.js, Redux, Bootstrap, Node.js, Express</strong>,
+                and <strong>MongoDB</strong>. From developing full-stack clones
+                of platforms like Zomato and Myntra to building ConvoSync, a
+                real-time chat application, I love transforming ideas into
+                functional, visually appealing web experiences. I'm always eager
+                to learn and grow by exploring new technologies and best
+                practices in development. Outside of coding, I enjoy reading,
+                crafting, and staying connected to my faith and family.
               </p>
               <a href="#contact" className="btn btn-outline-danger btn-sm mt-2">
                 Contact me
